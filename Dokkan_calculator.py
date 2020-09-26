@@ -50,6 +50,7 @@ class attacking_char:
 
     def leaderBuffed_atk(self, leader_multiplier, base_atk):
         return leader_multiplier * base_atk
+#everything downwards is just for reference from the first version of the calculator that worked but didnt allow more features that id like
 
 def conditional_stats():
     while True:
