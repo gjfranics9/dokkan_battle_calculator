@@ -1,5 +1,5 @@
 class attacking_char:
-#this is object oriented for almost no reason
+#this is object oriented for almost no reason - possible damage total calculation factoribng in enemy defensive stats and damage reduction in future
     def __init__(self,base_atk,leader_stat,friend_stat):
         #sets base for all stats currently
         self.base_atk = 0
