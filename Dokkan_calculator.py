@@ -1,5 +1,7 @@
 class attacking_char:
 #this is object oriented for almost no reason - possible damage total calculation factoribng in enemy defensive stats and damage reduction in future
+
+
     def __init__(self,base_atk,leader_stat,friend_stat):
         #sets base for all stats currently
         self.base_atk = 0
@@ -8,7 +10,7 @@ class attacking_char:
 
     def stats(self):
         #an output to check current stats and output, used to verify everything
-        return{'base attack': self.base_atk, "leader skill": self.leader_stat, "friend's leader skill": self.friend_stat}
+        return{'Base Attack Stat': self.base_atk, "Leader Skill Stat": self.leader_stat, "Friend's Leader Skill": self.friend_stat}
     
     def base_attack(self):
         #base attack
@@ -60,6 +62,11 @@ class attacking_char:
         return leader_multiplier * base_atk
 
 
-unit = attacking_char(0,0,0)
-leaderskillin = unit.base_attack() * (unit.leaderSkills_multiplier(unit.leader_skill(),unit.friend_skill()))
-print(leaderskillin)
+def main():
+    unit = attacking_char(0,0,0)
+    leaderskillin = unit.base_attack() * (unit.leaderSkills_multiplier(unit.leader_skill(),unit.friend_skill()))
+    print(leaderskillin)
+
+
+
+main()
